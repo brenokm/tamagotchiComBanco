@@ -5,6 +5,7 @@ public class Tamago {
     
     private int id_tamago;
     private String nome_tamago;
+    private String tipo_tamago;
     private int level_tamago;
     private int idade_tamago;
     private int energia_tamago;
@@ -17,9 +18,10 @@ public class Tamago {
     public Tamago() {
     }
 
-    public Tamago(int id_tamago, String nome_tamago, int level_tamago, int idade_tamago, int energia_tamago, int saude_tamago, int fome_tamago, int estadoM_tamago, int higiene_tamago, int sono_tamago) {
+    public Tamago(int id_tamago, String nome_tamago, String tipo_tamago, int level_tamago, int idade_tamago, int energia_tamago, int saude_tamago, int fome_tamago, int estadoM_tamago, int higiene_tamago, int sono_tamago) {
         this.id_tamago = id_tamago;
         this.nome_tamago = nome_tamago;
+        this.tipo_tamago = tipo_tamago;
         this.level_tamago = level_tamago;
         this.idade_tamago = idade_tamago;
         this.energia_tamago = energia_tamago;
@@ -47,6 +49,14 @@ public class Tamago {
 
     public void setNome_tamago(String nome_tamago) {
         this.nome_tamago = nome_tamago;
+    }
+    
+       public String getTipo_tamago() {
+        return tipo_tamago;
+    }
+
+    public void setTipo_tamago(String tipo_tamago) {
+        this.tipo_tamago = tipo_tamago;
     }
 
     public int getLevel_tamago() {
@@ -112,6 +122,6 @@ public class Tamago {
     public void setSono_tamago(int sono_tamago) {
         this.sono_tamago = sono_tamago;
     }
-    
-    
+
+ 
 }
